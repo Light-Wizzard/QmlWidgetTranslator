@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <DisplayName>QmlWidgetTranslator</DisplayName>
+    <Description>QmlWidgetTranslator by Light Wizzard</Description>
+    <Version>1.0.0</Version>
+    <ReleaseDate>2021-08-11</ReleaseDate>
+    <Licenses>
+        <License name="Unlicense Agreement" file="unlicense.txt" />
+    </Licenses>
+    <Default>script</Default>
+    <Script>installscript.qs</Script>
+    <UserInterfaces>
+        <UserInterface>MainWindow.ui</UserInterface>
+    </UserInterfaces>
+</Package>
+

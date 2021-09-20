@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=QmlWidgetTranslator
+GenericName=QmlWidgetTranslator
+Comment=QmlWidgetTranslator by the Light Wizzard
+Icon=QmlWidgetTranslator
+Exec=QmlWidgetTranslator
+Terminal=false
+Categories=Education;
+Keywords=template;
+Name[en_US]=QmlWidgetTranslator.desktop

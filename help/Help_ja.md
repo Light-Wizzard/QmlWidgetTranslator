@@ -1,0 +1,4 @@
+＃QmlWidgetTranslatorヘルプ
+
+QmlWidgetTranslatorは、翻訳ファイルを支援するために作成されたQtアプリケーションです。
+動的言語切り替えアプリケーションで翻訳ファイルを使用する方法の例を示します。

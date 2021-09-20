@@ -1,0 +1,11 @@
+[Desktop Entry]
+Type=Application
+Name=QmlWidgetTranslator
+GenericName=QmlWidgetTranslator
+Comment=Qt Lingo by the Light Wizzard
+Icon=QmlWidgetTranslator
+Exec=bin/QmlWidgetTranslator
+Terminal=false
+Categories=Translation;
+Keywords=translator;
+Name[en_US]=QmlWidgetTranslator.desktop

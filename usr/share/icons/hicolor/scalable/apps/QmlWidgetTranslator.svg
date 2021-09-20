@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="90.311111mm"
+   height="90.311111mm"
+   viewBox="0 0 90.311111 90.311111"
+   version="1.1"
+   id="svg40996"
+   inkscape:version="1.1 (c4e8f9ed74, 2021-05-24)"
+   sodipodi:docname="QmlWidgetTranslator.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview40998"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.74475309"
+     inkscape:cx="606.24119"
+     inkscape:cy="457.86987"
+     inkscape:window-width="1920"
+     inkscape:window-height="1010"
+     inkscape:window-x="0"
+     inkscape:window-y="42"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs40993">
+    <rect
+       x="12.36007"
+       y="8.3941739"
+       width="310.83849"
+       height="104.18644"
+       id="rect58666" />
+    <rect
+       x="16.554575"
+       y="239.87688"
+       width="306.7229"
+       height="59.997084"
+       id="rect4828" />
+    <rect
+       x="13.92612"
+       y="216.17006"
+       width="325.51121"
+       height="119.60235"
+       id="rect88747" />
+    <rect
+       x="9.6296645"
+       y="107.59247"
+       width="322.23515"
+       height="113.04"
+       id="rect76807" />
+    <rect
+       x="17.322111"
+       y="97.637118"
+       width="274.12232"
+       height="124.94826"
+       id="rect62993" />
+    <rect
+       x="132.64345"
+       y="247.38841"
+       width="246.65083"
+       height="134.94987"
+       id="rect55925" />
+    <rect
+       x="13.336792"
+       y="103.08445"
+       width="312.54394"
+       height="93.350702"
+       id="rect47471" />
+    <rect
+       x="13.251315"
+       y="116.23516"
+       width="293.3782"
+       height="98.276151"
+       id="rect44715" />
+    <rect
+       x="5.0024444"
+       y="-1.2527624"
+       width="322.12038"
+       height="341.40694"
+       id="rect14035" />
+    <rect
+       x="11.449894"
+       y="13.196488"
+       width="322.10759"
+       height="315.53516"
+       id="rect5127" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(55.458187,-27.318129)">
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,-55.458187,27.318129)"
+       id="text58664"
+       style="font-size:96px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect58666)" />
+    <text
+       xml:space="preserve"
+       style="font-size:25.4px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="-40.303688"
+       y="51.284145"
+       id="text64722"><tspan
+         sodipodi:role="line"
+         id="tspan64720"
+         style="font-size:25.4px;stroke-width:0.264583"
+         x="-40.303688"
+         y="51.284145">QML</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:22.5778px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="-49.270744"
+       y="81.613754"
+       id="text77440"><tspan
+         sodipodi:role="line"
+         id="tspan77438"
+         style="font-size:22.5778px;stroke-width:0.264583"
+         x="-49.270744"
+         y="81.613754">Widget</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:16.9333px;line-height:1.25;font-family:sans-serif;stroke-width:0.264583"
+       x="-52.503078"
+       y="109.62099"
+       id="text86448"><tspan
+         sodipodi:role="line"
+         id="tspan86446"
+         style="font-size:16.9333px;stroke-width:0.264583"
+         x="-52.503078"
+         y="109.62099">Translator</tspan></text>
+  </g>
+</svg>
