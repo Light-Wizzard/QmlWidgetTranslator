@@ -106,26 +106,32 @@ void MainWindow::changeEvent(QEvent *event)
     if (!getMainLoaded()) { return; }
     QMetaEnum metaEnum = QMetaEnum::fromType<QEvent::Type>();
     myLanguageModel->mySetting->setMessage("change Event", QString("%1: %2").arg("changeEvent", metaEnum.valueToKey(event ->type())), MyOrgSettings::MyMessageTypes::Debug);
-    if (event ->type() == QEvent::LanguageChange && getMainLoaded())
+    if (event ->type() == QEvent::LanguageChange)
     {
-        if (myLanguageModel->getLanguageName() != getLastLanguageName())
-        {
-            // retranslate designer form (single inheritance approach)
-            ui->retranslateUi(this);
-            // retranslate other widgets which weren't added in designer
-            retranslate();
-        }
+        // retranslate designer form (single inheritance approach)
+        ui->retranslateUi(this);
+        // retranslate other widgets which weren't added in designer
+        retranslate();
     }
     // remember to call base class implementation
     QMainWindow::changeEvent(event);
 }
 /************************************************
- * @brief on Internet Progress.
- * onInternetProgress
+ * @brief set Database Model is called from main.c.
+ * setDatabaseModel
  ***********************************************/
-void MainWindow::onInternetProgress()
+void MainWindow::setDatabaseModel()
 {
-    ui->statusbar->showMessage(tr("Internet is down, trying to reconnect"));
+    myUiLanguageName = myLanguageModel->languageCodeToName(myLanguageModel->getDefaultLanguageCode());
+    //
+    myDbModel = new MyDatatables(myLanguageModel, this);
+    myDbModel->setProjectDefaultStatus(myDbModel->getProjectStatus());
+    // Read in Settings First
+    readSettingsFirst();
+    // Progress bar
+    connect(myLanguageModel->mySetting, &MyOrgSettings::sendInternetProgress, this, &MainWindow::onInternetProgress);
+    // Do a one time Single Shot call to onRunFirstOnStartup to allow the GUI to load before calling what is in that call
+    QTimer::singleShot(33, this, &MainWindow::onRunFirstOnStartup);
 }
 /************************************************
  * @brief read Settings First.
@@ -141,10 +147,7 @@ void MainWindow::readSettingsFirst()
     setMessagingStates(isDebugMessage);
     // Go to Tab
     int theIndex = myLanguageModel->mySetting->readSettingsInt(myLanguageModel->mySetting->MY_LAST_TAB_INDEX, myLanguageModel->mySetting->MY_DEFAULT_TAB_INDEX.toInt());
-    if (theIndex < 0)
-    {
-        theIndex = 0;
-    }
+    if (theIndex < 0) { theIndex = 0; }
     ui->tabWidget->setCurrentIndex(theIndex);
 }
 /************************************************
@@ -178,13 +181,14 @@ void MainWindow::setMessagingStates(bool thisMessageState)
 void MainWindow::onRunFirstOnStartup()
 {
     myLanguageModel->mySetting->setMessage("on Run First On Startup", "onRunFirstOnStartup", MyOrgSettings::MyMessageTypes::Debug);
+    setMainLoaded(false); // Set true for event
     readAllSettings();
     // Read Saved Language
     myLanguageModel->readLanguage();
     //
-    setMainLoaded(true); // Set true for event
     if (!myDbModel->checkDatabase(myDbType)) close();
     // Load Language
+    setMainLoaded(true); // Set true for event
     loadLanguage(myLanguageModel->getLanguageName());
 }
 /************************************************
@@ -206,23 +210,6 @@ bool MainWindow::getMainLoaded()
     return isMainLoaded;
 }
 /************************************************
- * @brief set Database Model is called from main.c.
- * setDatabaseModel
- ***********************************************/
-void MainWindow::setDatabaseModel()
-{
-    myUiLanguageName = myLanguageModel->languageCodeToName(myLanguageModel->getDefaultLanguageCode());
-    //
-    myDbModel = new MyDatatables(myLanguageModel, this);
-    myDbModel->setProjectDefaultStatus(myDbModel->getProjectStatus());
-    // Read in Settings First
-    readSettingsFirst();
-    // Progress bar
-    connect(myLanguageModel->mySetting, &MyOrgSettings::sendInternetProgress, this, &MainWindow::onInternetProgress);
-    // Do a one time Single Shot call to onRunFirstOnStartup to allow the GUI to load before calling what is in that call
-    QTimer::singleShot(666, this, &MainWindow::onRunFirstOnStartup);
-}
-/************************************************
  * @brief retranslate.
  * retranslate
  ***********************************************/
@@ -241,7 +228,7 @@ void MainWindow::retranslate()
 
     loadProjectProgressStatusComboBox(myDbModel->getProjectName(), myDbModel->getProjectStatus());
     //
-    setLastLanguageName(ui->comboBoxLanguage->currentText());
+    //setLastLanguageName(ui->comboBoxLanguage->currentText());
 }
 /************************************************
  * @brief load Language.
@@ -251,7 +238,10 @@ void MainWindow::loadLanguage(const QString &thisLanguage)
 {
     if (getLastLanguageName() != thisLanguage)
     {
-        myLanguageModel->setLanguage(thisLanguage);
+        if (myLanguageModel->setLanguage(thisLanguage))
+        {
+            setLastLanguageName(thisLanguage);
+        }
         //loadLanguageComboBox();
     }
 }
@@ -386,6 +376,14 @@ void MainWindow::readSqlDatabaseInfo()
     }
     setSqlBrowseButton();
     #endif
+}
+/************************************************
+ * @brief on Internet Progress.
+ * onInternetProgress
+ ***********************************************/
+void MainWindow::onInternetProgress()
+{
+    ui->statusbar->showMessage(tr("Internet is down, trying to reconnect"));
 }
 /************************************************
  * @brief on Author.
@@ -585,7 +583,7 @@ void MainWindow::on_pushButtonSqlPasswordShow_clicked()
  ***********************************************/
 void MainWindow::on_pushButtonSqlSave_clicked()
 {
-    myLanguageModel->mySetting->setMessage("on_pushButtonSqlDatabaseNameBrowse_clicked", "on_pushButtonSqlDatabaseNameBrowse_clicked", MyOrgSettings::MyMessageTypes::Debug);
+    myLanguageModel->mySetting->setMessage("on_pushButtonSqlSave_clicked", "on_pushButtonSqlSave_clicked", MyOrgSettings::MyMessageTypes::Debug);
     writeAllSettings();
     setSqlBrowseButton();
 }

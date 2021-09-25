@@ -6,6 +6,9 @@ var hierarchy =
     [ "QAbstractListModel", null, [
       [ "MyLanguageModel", "classMyLanguageModel.html", null ]
     ] ],
+    [ "QGumboAttribute", "classQGumboAttribute.html", null ],
+    [ "QGumboDocument", "classQGumboDocument.html", null ],
+    [ "QGumboNode", "classQGumboNode.html", null ],
     [ "QMainWindow", null, [
       [ "MainWindow", "classMainWindow.html", null ]
     ] ],

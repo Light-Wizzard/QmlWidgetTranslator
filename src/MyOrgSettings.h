@@ -126,7 +126,9 @@ class MyOrgSettings : public QObject
         // Write
         void writeSettings(const QString &thisSetting, const QString &thisValue);       //!< write Settings
         // Getter/Setter
+        QSettings *getOrgSettings();                                                    //!< get Org Settings
         QSettings *getSettings();                                                       //!< get Settings
+        void setSettings(QSettings *thisSetting);                                       //!< set Settings
         // Data Path
         QString getDataPath(const QString &thisFileName);                               //!< Get Data Path
         // Org Name
@@ -145,8 +147,8 @@ class MyOrgSettings : public QObject
         QString getIniFileName();                                                       //!< my Application IniFile
         void    setIniFileName(const QString &thisIniFileName);                         //!< set IniFile
         // Ini File Extension
-        void setIniFileExtension(const QString &thisIniFileNameExtension); //!< set Ini File Extension
-        QString getIniFileExtension();                                     //!< getIniFileExtension
+        void    setIniFileExtension(const QString &thisIniFileNameExtension);           //!< set Ini File Extension
+        QString getIniFileExtension();                                                  //!< getIniFileExtension
         // Application Ini Full Path
         QString getIniFullPath();                                                       //!< my Application IniFile
         void    setIniFullPath(const QString &thisIniFileName);                         //!< set IniFile
@@ -164,17 +166,21 @@ class MyOrgSettings : public QObject
         void removeAllFiles(const QString &thisFolder);                                 //!< remove All Files
         QString getLastApplicationPath();                                               //!< get Last Application Path
         void    setLastApplicationPath(const QString &thisPath);                        //!< set Last Application Path
+        // App Data Location
         QString getAppDataLocation();                                                   //!< get AppData Location
         void    setAppDataLocation(const QString &thisAppDataLocation);                 //!< set AppData Location
-        bool    isAppDataLocationGood(const QString &thisFolder);                       //!< is AppData Location Good
+        bool    isAppLocationWriteable(const QString &thisFolder);                       //!< is AppData Location Good
+        // App Document Location
+        QString getAppDocumentLocation();                                               //!< get App Document Location
+        void setAppDocumentLocation(const QString &thisAppDocumentLocation);            //!< set AppD ocument Location
         //
-        bool   isSetting(const QString &thisFieldName);                                 //!< is Setting
+        bool isSetting(const QString &thisFieldName);                                   //!< is Setting
         // Screen Geometry
-        void   setGeometry(QByteArray thisGeometry);     //!< Screen Geometry
-        QByteArray getGeometry();                                                           //!< get Geometry
+        void setGeometry(QByteArray thisGeometry);                                      //!< Screen Geometry
+        QByteArray getGeometry();                                                       //!< get Geometry
         //
-        QByteArray   getWindowState();                                                        //!< get Geometry Min
-        void   setWindowState(QByteArray thisWindowState);                                                        //!< get Geometry Min
+        QByteArray getWindowState();                                                    //!< get Geometry Min
+        void setWindowState(QByteArray thisWindowState);                                //!< get Geometry Min
         // Crypto for Password
         QString encryptThis(const QString &thisSecret);                                 //!< encrypt This
         QString decryptThis(const QString &thisSecret);                                 //!< decrypt This
@@ -183,23 +189,21 @@ class MyOrgSettings : public QObject
         bool isWord(const QString &thisString) const;                                   //!< is Word
         void delay(int thisSeconds);                                                    //!< delay
         // Is Debug Message
-        void setDebugMessage(bool thisState);                       //!< set Debug Message
-        bool getDebugMessage();                                     //!< get Debug Message
+        void setDebugMessage(bool thisState);                                           //!< set Debug Message
+        bool getDebugMessage();                                                         //!< get Debug Message
         // Messaging
-        bool    questionYesNo(const char *thisTitle, const char *thisQuestion) const;   //!< question Yes No
+        bool     questionYesNo(const char *thisTitle, const char *thisQuestion) const;   //!< question Yes No
         QVariant showMessageBox(const QString &thisTitle, const QString &thisMessage, MyMessageTypes thisMessageType) const; //!< show Message Box information, question, warning, critica
         QVariant setMessage(const QString &thisTitle, const QString &thisMessage, MyMessageTypes thisMessageType) const; //!< set Message
         // Internet with Wait
-        bool getInternetWait();                                     //!< get Internet Wait
-        bool pingInternet();                                        //!< ping Internet
-        bool connectInternet();                                     //!< connect Internet
+        bool getInternetWait();                                        //!< get Internet Wait
+        bool pingInternet();                                           //!< ping Internet
+        bool connectInternet();                                        //!< connect Internet
         QString getCheckInternetUrl();                                 //!< get Check Internet Url
         void setCheckInternetUrl(const QString &thisCheckInternetUrl); //!< set Check Internet Url
 
-        QSettings *getSetteings();
-
     private slots:
-        void onUpdateSettings();
+        void onUpdateSettings();                                    //!< onUpdateSettings
 
     signals:
         void sendInternetProgress();                                //!< send Internet Progress
@@ -224,7 +228,7 @@ class MyOrgSettings : public QObject
         QString             myIniFileExtension      = "";           //!< \c myIniFileExtension      @brief my Ini File Extension
         QString             myCheckInternetUrl      = "";           //!< \c myCheckInternetUrl      @brief my Check Internet Url
         QString             myAppDataLocation       = "";           //!< \c myAppDataLocation       @brief my App Data Location
-
+        QString             myAppDocumentLocation   = "";           //!< \c myAppDocumentLocation   @brief my App Document Location
 };
 #endif // MY_ORG_SETTINGS_H
 /*** ************************* End of File ***********************************/

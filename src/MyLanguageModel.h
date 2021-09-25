@@ -64,9 +64,10 @@ class MyLanguageModel : public QAbstractListModel
         QVariant data(const QModelIndex & index, int role = Qt::DisplayRole) const; //!< data
         // Languages
         Q_INVOKABLE void setLanguages();                                //!< set Languages
-        Q_INVOKABLE void setLanguage(const QString &thisLanguageName);  //!< load Language
-        // find Qm Files
-        QStringList getQmFiles(const QString &thisFolder);               //!< find Qm Files
+        Q_INVOKABLE bool setLanguage(const QString &thisLanguageName);  //!< load Language
+        // Get TS and QM Files
+        QStringList getTsFiles(const QString &thisFolder);               //!< get Ts Files
+        QStringList getQmFiles(const QString &thisFolder);               //!< get Qm Files
         // Translation Source
         void setTranslationSource(const QString &thisTranslationSource); //!< set Translation Source
         QString getTranslationSource();                                  //!< get Translation Source
@@ -112,6 +113,8 @@ class MyLanguageModel : public QAbstractListModel
         void writeLanguage();                                       //!< write Language
         // translate This
         QString translateThis(const QString &thisPhrase);           //!< translate This is required for Translation Files
+
+        QString getLangCode(const QString &thisString);             //!< get Lang Code
 
     signals:
         void languageChanged();                   //!< language Changed Event

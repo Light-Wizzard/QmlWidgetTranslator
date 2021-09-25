@@ -51,21 +51,33 @@ void MyOrgSettings::onRunOnStartup()
  ***********************************************/
 void MyOrgSettings::onUpdateSettings()
 {
-    mySettings = getSettings();
+    mySettings = getOrgSettings();
 }
 /************************************************
- * @brief on Update Settings.
- * onUpdateSettings
+ * @brief getSettings.
+ * getSettings
  ***********************************************/
-QSettings *MyOrgSettings::getSetteings()
+QSettings *MyOrgSettings::getSettings()
 {
+    if (mySettings == nullptr)
+    {
+        setSettings(getOrgSettings());
+    }
     return mySettings;
+}
+/************************************************
+ * @brief getSettings.
+ * getSettings
+ ***********************************************/
+void MyOrgSettings::setSettings(QSettings *thisSetting)
+{
+    mySettings = thisSetting;
 }
 /************************************************
  * @brief get Settings.
  * getSettings
  ***********************************************/
-QSettings *MyOrgSettings::getSettings()
+QSettings *MyOrgSettings::getOrgSettings()
 {
     setMessage("get Settings", "getSettings", Debug);
     if (!isFileExists(getIniFullPath()))
@@ -76,7 +88,7 @@ QSettings *MyOrgSettings::getSettings()
         }
     }
     return new QSettings(getIniFullPath(), QSettings::IniFormat);
-} // end qSettingsInstance
+} // end getOrgSettings
 /************************************************
  * @brief is Setting.
  * isSetting
@@ -562,10 +574,10 @@ QString MyOrgSettings::getFileInfo(MyOrgSettings::MyFileinfo thisInfo, const QSt
     return "";
 }
 /************************************************
- * @brief is App Data Location Good.
- * isAppDataLocationGood
+ * @brief is App Location Writeable.
+ * isAppLocationWriteable
  ***********************************************/
-bool MyOrgSettings::isAppDataLocationGood(const QString &thisFolder)
+bool MyOrgSettings::isAppLocationWriteable(const QString &thisFolder)
 {
     setMessage("is App Data Location Good", QString("isAppDataLocationGood(%1)").arg(thisFolder), Debug);
     bool isGood = true;
@@ -579,7 +591,7 @@ bool MyOrgSettings::isAppDataLocationGood(const QString &thisFolder)
     if (getFileInfo(IsFolder, thisFolder) == "false")
         { isGood = false; }
     return isGood;
-} // end isAppDataLocationGood
+} // end isAppLocationWriteable
 /************************************************
  * @brief get App Data Location.
  * getAppDataLocation
@@ -597,7 +609,7 @@ QString MyOrgSettings::getAppDataLocation()
             if (theAppDataLocation.isEmpty())
             { theAppDataLocation = QDir::currentPath(); }
         }
-        if (!isAppDataLocationGood(theAppDataLocation))
+        if (!isAppLocationWriteable(theAppDataLocation))
         {
             theAppDataLocation = QDir::currentPath(); // FIXME
         }
@@ -618,6 +630,42 @@ void MyOrgSettings::setAppDataLocation(const QString &thisAppDataLocation)
         emit sendUpdateSettings();
     }
 } // end setAppDataLocation
+/************************************************
+ * @brief get App Document Location.
+ * getAppDocumentLocation
+ ***********************************************/
+QString MyOrgSettings::getAppDocumentLocation()
+{
+    if (myAppDocumentLocation.isEmpty())
+    {
+        QString theAppDocumentLocation = QStandardPaths::writableLocation(QStandardPaths::DocumentsLocation);
+        if (theAppDocumentLocation.isEmpty())
+        {
+            theAppDocumentLocation = QStandardPaths::writableLocation(QStandardPaths::HomeLocation);
+            if (theAppDocumentLocation.isEmpty())
+                { theAppDocumentLocation = QStandardPaths::writableLocation(QStandardPaths::ApplicationsLocation); }
+            if (theAppDocumentLocation.isEmpty())
+                { theAppDocumentLocation = QDir::currentPath(); }
+        }
+        if (!isAppLocationWriteable(theAppDocumentLocation))
+            { theAppDocumentLocation = QDir::currentPath(); } // FIXME
+        setAppDocumentLocation(theAppDocumentLocation);
+    }
+    setMessage("get App Document Location", QString("getAppDocumentLocation(%1)").arg(myAppDocumentLocation), Debug);
+    return myAppDocumentLocation;
+} // end getAppDocumentLocation
+/************************************************
+ * @brief set App Document Location.
+ * setAppDocumentLocation
+ ***********************************************/
+void MyOrgSettings::setAppDocumentLocation(const QString &thisAppDocumentLocation)
+{
+    if (QString::compare(myAppDocumentLocation, thisAppDocumentLocation, Qt::CaseInsensitive))
+    {
+        myAppDocumentLocation = thisAppDocumentLocation;
+        emit sendUpdateSettings();
+    }
+} // end setAppDocumentLocation
 /************************************************
  * @brief get Environment Var.
  * getEnvironmentVar

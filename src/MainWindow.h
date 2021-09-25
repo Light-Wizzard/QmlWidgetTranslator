@@ -109,7 +109,7 @@ class MainWindow : public QMainWindow
         //
         void loadLanguage(const QString &thisLanguage);  //!< load Language
         //
-        void validateProjectName(const QString &thisText);
+        void validateProjectName(const QString &thisText); //!< validate Project Name
 
     public slots:
         void onSaveAll(const QString &thisStatus); //!< on Save
@@ -148,8 +148,8 @@ class MainWindow : public QMainWindow
         void onAuthor();                                    //!< on Author
         void onInternetProgress();                          //!< on Internet Progress
         //
-        void on_lineEditProjectsName_textChanged(const QString &thisText);
-        void on_tabWidget_currentChanged(int index);
+        void on_lineEditProjectsName_textChanged(const QString &thisText); //!< on lineEdit Projects Name text Changed
+        void on_tabWidget_currentChanged(int index); //!< on tab Widget current Changed
 
 
         void onTextBold();
@@ -165,17 +165,17 @@ class MainWindow : public QMainWindow
         Ui::MainWindow  *ui;                               //!< \c ui                   @brief UI
         MyLanguageModel *myLanguageModel;                  //!< \c myLanguageModel      @brief my Language Model
         MyDatatables    *myDbModel;                        //!< \c myDbModel            @brief my Database Model.
-        QString          myUiLanguageName     = "";        //!< \c myUiLanguageName     @brief UI Language Name
-        QString          myLastLanguageName   = "";        //!< \c myUiLanguageName     @brief UI Language Name
-        QString          myDbType;                         //!< \c myDbType             @brief my Database Type
-        QString          myDateTimeFormatStartedValue;     //!< \c myDateTimeFormatStartedValue @brief my Date Time Format Started Value
-        QString          myDateTimeFormatDueValue;         //!< \c myDateTimeFormatDueValue @brief my Date Time Format Due Value
-        QString          myDefaultStatusName  = "Waiting"; //!< \c myDefaultStatusName  @brief my Default Status Name
-        int              myLastProjectID;                  //!< \c myLastProjectID      @brief my Last Project ID
-        int              myLastStatusID;                   //!< \c myLastStatusID       @brief my Last Status ID
+        QString          myUiLanguageName     = "";        //!< \c myUiLanguageName     @brief UI Language Name.
+        QString          myLastLanguageName   = "";        //!< \c myLastLanguageName   @brief Last Language Name.
+        QString          myDbType;                         //!< \c myDbType             @brief my Database Type.
+        QString          myDateTimeFormatStartedValue;     //!< \c myDateTimeFormatStartedValue @brief my Date Time Format Started Value.
+        QString          myDateTimeFormatDueValue;         //!< \c myDateTimeFormatDueValue @brief my Date Time Format Due Value.
+        QString          myDefaultStatusName  = "Waiting"; //!< \c myDefaultStatusName  @brief my Default Status Name.
+        int              myLastProjectID;                  //!< \c myLastProjectID      @brief my Last Project ID.
+        int              myLastStatusID;                   //!< \c myLastStatusID       @brief my Last Status ID.
         bool             isDebugMessage       = false;     //!< \c isDebugMessage       @brief true of false for Debugging.
         bool             isMainLoaded         = false;     //!< \c isMainLoaded         @brief Set true after one shot time loads.
-        int              myRecordID;                       //!< \c isMainLoaded         @brief my Database Record ID
+        int              myRecordID;                       //!< \c isMainLoaded         @brief my Database Record ID.
 };
 #endif // MAINWINDOW_H
 /******************************* End of File *********************************/

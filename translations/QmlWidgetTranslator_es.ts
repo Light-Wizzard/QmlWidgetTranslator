@@ -74,8 +74,8 @@
     <message>
         <location filename="../src/MainWindow.ui" line="207"/>
         <location filename="../src/MainWindow.ui" line="704"/>
-        <location filename="../src/MainWindow.cpp" line="578"/>
-        <location filename="../src/MainWindow.cpp" line="1367"/>
+        <location filename="../src/MainWindow.cpp" line="576"/>
+        <location filename="../src/MainWindow.cpp" line="1365"/>
         <location filename="../src/Test/build-QmlWidgetTranslatorTestCase-Desktop_Qt_5_15_2_GCC_64bit-Debug/QmlWidgetTranslatorTestCase_autogen/include/ui_MainWindow.h" line="772"/>
         <location filename="../src/Test/build-QmlWidgetTranslatorTestCase-Desktop_Qt_5_15_2_GCC_64bit-Debug/QmlWidgetTranslatorTestCase_autogen/include/ui_MainWindow.h" line="802"/>
         <source>Show</source>
@@ -151,15 +151,15 @@
     </message>
     <message>
         <location filename="../src/MainWindow.ui" line="413"/>
-        <location filename="../src/MainWindow.cpp" line="773"/>
+        <location filename="../src/MainWindow.cpp" line="771"/>
         <location filename="../src/Test/build-QmlWidgetTranslatorTestCase-Desktop_Qt_5_15_2_GCC_64bit-Debug/QmlWidgetTranslatorTestCase_autogen/include/ui_MainWindow.h" line="784"/>
         <source>Progress Status</source>
         <translation>Status del progreso</translation>
     </message>
     <message>
         <location filename="../src/MainWindow.ui" line="465"/>
-        <location filename="../src/MainWindow.cpp" line="1336"/>
-        <location filename="../src/MainWindow.cpp" line="1348"/>
+        <location filename="../src/MainWindow.cpp" line="1334"/>
+        <location filename="../src/MainWindow.cpp" line="1346"/>
         <location filename="../src/Test/build-QmlWidgetTranslatorTestCase-Desktop_Qt_5_15_2_GCC_64bit-Debug/QmlWidgetTranslatorTestCase_autogen/include/ui_MainWindow.h" line="786"/>
         <source>Modify</source>
         <translation>Modificar</translation>
@@ -215,8 +215,8 @@
     <message>
         <location filename="../src/MainWindow.ui" line="458"/>
         <location filename="../src/MainWindow.ui" line="558"/>
-        <location filename="../src/MainWindow.cpp" line="1301"/>
-        <location filename="../src/MainWindow.cpp" line="1317"/>
+        <location filename="../src/MainWindow.cpp" line="1299"/>
+        <location filename="../src/MainWindow.cpp" line="1315"/>
         <location filename="../src/Test/build-QmlWidgetTranslatorTestCase-Desktop_Qt_5_15_2_GCC_64bit-Debug/QmlWidgetTranslatorTestCase_autogen/include/ui_MainWindow.h" line="785"/>
         <location filename="../src/Test/build-QmlWidgetTranslatorTestCase-Desktop_Qt_5_15_2_GCC_64bit-Debug/QmlWidgetTranslatorTestCase_autogen/include/ui_MainWindow.h" line="796"/>
         <source>Add</source>
@@ -224,9 +224,9 @@
     </message>
     <message>
         <location filename="../src/MainWindow.ui" line="565"/>
-        <location filename="../src/MainWindow.cpp" line="818"/>
-        <location filename="../src/MainWindow.cpp" line="857"/>
-        <location filename="../src/MainWindow.cpp" line="1230"/>
+        <location filename="../src/MainWindow.cpp" line="816"/>
+        <location filename="../src/MainWindow.cpp" line="855"/>
+        <location filename="../src/MainWindow.cpp" line="1228"/>
         <location filename="../src/Test/build-QmlWidgetTranslatorTestCase-Desktop_Qt_5_15_2_GCC_64bit-Debug/QmlWidgetTranslatorTestCase_autogen/include/ui_MainWindow.h" line="797"/>
         <source>Clear</source>
         <translation>Claro</translation>
@@ -298,85 +298,85 @@
         <translation>Autor</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="1110"/>
+        <location filename="../src/MainWindow.cpp" line="1108"/>
         <source>Day/Month/Year Time</source>
         <translation>Hora del día / mes / año</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="1125"/>
+        <location filename="../src/MainWindow.cpp" line="1123"/>
         <source>Military Time</source>
         <translation>Tiempo militar</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="128"/>
+        <location filename="../src/MainWindow.cpp" line="386"/>
         <source>Internet is down, trying to reconnect</source>
         <translation>Internet está caído, intentando volver a conectarse</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="761"/>
+        <location filename="../src/MainWindow.cpp" line="759"/>
         <source>loadProjectProgressStatusComboBox</source>
         <translation>loadProjectProgressStatusComboBox</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="820"/>
+        <location filename="../src/MainWindow.cpp" line="818"/>
         <source>Unclear</source>
         <translation>Poco claro</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="1105"/>
+        <location filename="../src/MainWindow.cpp" line="1103"/>
         <source>Month/Day/Year Time</source>
         <translation>Mes / Día / Año Hora</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="1115"/>
+        <location filename="../src/MainWindow.cpp" line="1113"/>
         <source>Year/Month/Day Time</source>
         <translation>Año / Mes / Día Hora</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="1120"/>
+        <location filename="../src/MainWindow.cpp" line="1118"/>
         <source>Year/Day/Month Time</source>
         <translation>Año / Día / Mes Hora</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="1128"/>
+        <location filename="../src/MainWindow.cpp" line="1126"/>
         <source>setDateTimeFormat</source>
         <translation>setDateTimeFormat</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="1380"/>
+        <location filename="../src/MainWindow.cpp" line="1378"/>
         <source>Input Project Name</source>
         <translation>Ingrese el nombre del proyecto</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="1307"/>
-        <location filename="../src/MainWindow.cpp" line="1342"/>
+        <location filename="../src/MainWindow.cpp" line="1305"/>
+        <location filename="../src/MainWindow.cpp" line="1340"/>
         <source>Commit</source>
         <translation>Cometer</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="573"/>
-        <location filename="../src/MainWindow.cpp" line="1362"/>
+        <location filename="../src/MainWindow.cpp" line="571"/>
+        <location filename="../src/MainWindow.cpp" line="1360"/>
         <source>Hide</source>
         <translation>Esconder</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="725"/>
-        <location filename="../src/MainWindow.cpp" line="772"/>
+        <location filename="../src/MainWindow.cpp" line="723"/>
+        <location filename="../src/MainWindow.cpp" line="770"/>
         <source>ID</source>
         <translation>IDENTIFICACIÓN</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="726"/>
+        <location filename="../src/MainWindow.cpp" line="724"/>
         <source>Project</source>
         <translation>Proyecto</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="544"/>
+        <location filename="../src/MainWindow.cpp" line="542"/>
         <source>Sqlite Folder Location</source>
         <translation>Ubicación de la carpeta Sqlite</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="559"/>
+        <location filename="../src/MainWindow.cpp" line="557"/>
         <source>Failed to move Database</source>
         <translation>No se pudo mover la base de datos</translation>
     </message>
@@ -438,7 +438,7 @@
 <context>
     <name>MyLanguageModel</name>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="236"/>
+        <location filename="../src/MyLanguageModel.cpp" line="237"/>
         <source>loadLanguage failed</source>
         <translation>loadLanguage falló</translation>
     </message>
@@ -479,7 +479,7 @@
         <translation type="vanished">mi</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1061"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1090"/>
         <source>Chichewa</source>
         <translation>Chichewa</translation>
     </message>
@@ -516,622 +516,622 @@
         <translation type="vanished">yua</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="916"/>
+        <location filename="../src/MyLanguageModel.cpp" line="945"/>
         <source>Afrikaans</source>
         <translation>africaans</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="917"/>
+        <location filename="../src/MyLanguageModel.cpp" line="946"/>
         <source>Albanian</source>
         <translation>albanés</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="918"/>
+        <location filename="../src/MyLanguageModel.cpp" line="947"/>
         <source>Amharic</source>
         <translation>Amárico</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="919"/>
+        <location filename="../src/MyLanguageModel.cpp" line="948"/>
         <source>Arabic</source>
         <translation>Arábica</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="920"/>
+        <location filename="../src/MyLanguageModel.cpp" line="949"/>
         <source>Armenian</source>
         <translation>armenio</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="921"/>
+        <location filename="../src/MyLanguageModel.cpp" line="950"/>
         <source>Azeerbaijani</source>
         <translation>Azerbaiyano</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="922"/>
+        <location filename="../src/MyLanguageModel.cpp" line="951"/>
         <source>Basque</source>
         <translation>vasco</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="923"/>
+        <location filename="../src/MyLanguageModel.cpp" line="952"/>
         <source>Bashkir</source>
         <translation>Bashkir</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="924"/>
+        <location filename="../src/MyLanguageModel.cpp" line="953"/>
         <source>Belarusian</source>
         <translation>Bielorruso</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="925"/>
+        <location filename="../src/MyLanguageModel.cpp" line="954"/>
         <source>Bengali</source>
         <translation>bengalí</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="926"/>
+        <location filename="../src/MyLanguageModel.cpp" line="955"/>
         <source>Bosnian</source>
         <translation>bosnio</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="927"/>
+        <location filename="../src/MyLanguageModel.cpp" line="956"/>
         <source>Bulgarian</source>
         <translation>búlgaro</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="928"/>
+        <location filename="../src/MyLanguageModel.cpp" line="957"/>
         <source>Catalan</source>
         <translation>catalán</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="929"/>
+        <location filename="../src/MyLanguageModel.cpp" line="958"/>
         <source>Cantonese</source>
         <translation>Cantonés</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="930"/>
+        <location filename="../src/MyLanguageModel.cpp" line="959"/>
         <source>Cebuano</source>
         <translation>Cebuano</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="931"/>
+        <location filename="../src/MyLanguageModel.cpp" line="960"/>
         <source>SimplifiedChinese</source>
         <translation>Chino simplificado</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="932"/>
+        <location filename="../src/MyLanguageModel.cpp" line="961"/>
         <source>TraditionalChinese</source>
         <translation>Chino tradicional</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="933"/>
+        <location filename="../src/MyLanguageModel.cpp" line="962"/>
         <source>Corsican</source>
         <translation>corso</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="934"/>
+        <location filename="../src/MyLanguageModel.cpp" line="963"/>
         <source>Croatian</source>
         <translation>croata</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="935"/>
+        <location filename="../src/MyLanguageModel.cpp" line="964"/>
         <source>Czech</source>
         <translation>checo</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="936"/>
+        <location filename="../src/MyLanguageModel.cpp" line="965"/>
         <source>Danish</source>
         <translation>danés</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="937"/>
+        <location filename="../src/MyLanguageModel.cpp" line="966"/>
         <source>Dutch</source>
         <translation>holandés</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="938"/>
+        <location filename="../src/MyLanguageModel.cpp" line="967"/>
         <source>English</source>
         <translation>inglés</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="939"/>
+        <location filename="../src/MyLanguageModel.cpp" line="968"/>
         <source>Esperanto</source>
         <translation>esperanto</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="940"/>
+        <location filename="../src/MyLanguageModel.cpp" line="969"/>
         <source>Estonian</source>
         <translation>Estonio</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="941"/>
+        <location filename="../src/MyLanguageModel.cpp" line="970"/>
         <source>Fijian</source>
         <translation>Fiyiano</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="942"/>
+        <location filename="../src/MyLanguageModel.cpp" line="971"/>
         <source>Filipino</source>
         <translation>Filipino</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="943"/>
+        <location filename="../src/MyLanguageModel.cpp" line="972"/>
         <source>Finnish</source>
         <translation>finlandés</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="944"/>
+        <location filename="../src/MyLanguageModel.cpp" line="973"/>
         <source>French</source>
         <translation>francés</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="945"/>
+        <location filename="../src/MyLanguageModel.cpp" line="974"/>
         <source>Frisian</source>
         <translation>frisio</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="946"/>
+        <location filename="../src/MyLanguageModel.cpp" line="975"/>
         <source>Galician</source>
         <translation>gallego</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="947"/>
+        <location filename="../src/MyLanguageModel.cpp" line="976"/>
         <source>Georgian</source>
         <translation>georgiano</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="948"/>
+        <location filename="../src/MyLanguageModel.cpp" line="977"/>
         <source>German</source>
         <translation>alemán</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="949"/>
+        <location filename="../src/MyLanguageModel.cpp" line="978"/>
         <source>Greek</source>
         <translation>griego</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="950"/>
+        <location filename="../src/MyLanguageModel.cpp" line="979"/>
         <source>Gujarati</source>
         <translation>Gujarati</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="952"/>
+        <location filename="../src/MyLanguageModel.cpp" line="981"/>
         <source>Hausa</source>
         <translation>Hausa</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="953"/>
+        <location filename="../src/MyLanguageModel.cpp" line="982"/>
         <source>Hawaiian</source>
         <translation>hawaiano</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="954"/>
+        <location filename="../src/MyLanguageModel.cpp" line="983"/>
         <source>Hebrew</source>
         <translation>hebreo</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="956"/>
+        <location filename="../src/MyLanguageModel.cpp" line="985"/>
         <source>Hindi</source>
         <translation>hindi</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="958"/>
+        <location filename="../src/MyLanguageModel.cpp" line="987"/>
         <source>Hungarian</source>
         <translation>húngaro</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="959"/>
+        <location filename="../src/MyLanguageModel.cpp" line="988"/>
         <source>Icelandic</source>
         <translation>islandés</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="960"/>
+        <location filename="../src/MyLanguageModel.cpp" line="989"/>
         <source>Igbo</source>
         <translation>Igbo</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="961"/>
+        <location filename="../src/MyLanguageModel.cpp" line="990"/>
         <source>Indonesian</source>
         <translation>indonesio</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="962"/>
+        <location filename="../src/MyLanguageModel.cpp" line="991"/>
         <source>Irish</source>
         <translation>irlandesa</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="963"/>
+        <location filename="../src/MyLanguageModel.cpp" line="992"/>
         <source>Italian</source>
         <translation>italiano</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="964"/>
+        <location filename="../src/MyLanguageModel.cpp" line="993"/>
         <source>Japanese</source>
         <translation>japonés</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="965"/>
+        <location filename="../src/MyLanguageModel.cpp" line="994"/>
         <source>Javanese</source>
         <translation>javanés</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="966"/>
+        <location filename="../src/MyLanguageModel.cpp" line="995"/>
         <source>Kannada</source>
         <translation>Canarés</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="967"/>
+        <location filename="../src/MyLanguageModel.cpp" line="996"/>
         <source>Kazakh</source>
         <translation>Kazajo</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="968"/>
+        <location filename="../src/MyLanguageModel.cpp" line="997"/>
         <source>Khmer</source>
         <translation>Jemer</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="969"/>
+        <location filename="../src/MyLanguageModel.cpp" line="998"/>
         <source>Kinyarwanda</source>
         <translation>Kinyarwanda</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="972"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1001"/>
         <source>Korean</source>
         <translation>coreano</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="973"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1002"/>
         <source>Kurdish</source>
         <translation>kurdo</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="975"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1004"/>
         <source>Lao</source>
         <translation>Lao</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="976"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1005"/>
         <source>Latin</source>
         <translation>latín</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="977"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1006"/>
         <source>Latvian</source>
         <translation>letón</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="979"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1008"/>
         <source>Lithuanian</source>
         <translation>lituano</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="980"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1009"/>
         <source>Luxembourgish</source>
         <translation>Luxemburgués</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="981"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1010"/>
         <source>Macedonian</source>
         <translation>macedónio</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="982"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1011"/>
         <source>Malagasy</source>
         <translation>madagascarí</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="983"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1012"/>
         <source>Malay</source>
         <translation>malayo</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="984"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1013"/>
         <source>Malayalam</source>
         <translation>Malayalam</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="985"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1014"/>
         <source>Maltese</source>
         <translation>maltés</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="986"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1015"/>
         <source>Maori</source>
         <translation>maorí</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="987"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1016"/>
         <source>Marathi</source>
         <translation>Marathi</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="989"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1018"/>
         <source>Mongolian</source>
         <translation>mongol</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="991"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1020"/>
         <source>Nepali</source>
         <translation>Nepalí</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="992"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1021"/>
         <source>Norwegian</source>
         <translation>noruego</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="993"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1022"/>
         <source>Oriya</source>
         <translation>Oriya</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="995"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1024"/>
         <source>Papiamento</source>
         <translation>Papiamento</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="996"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1025"/>
         <source>Pashto</source>
         <translation>Pashto</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="997"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1026"/>
         <source>Persian</source>
         <translation>persa</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="998"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1027"/>
         <source>Polish</source>
         <translation>polaco</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="999"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1028"/>
         <source>Portuguese</source>
         <translation>portugués</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1000"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1029"/>
         <source>Punjabi</source>
         <translation>punjabi</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1002"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1031"/>
         <source>Romanian</source>
         <translation>rumano</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1003"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1032"/>
         <source>Russian</source>
         <translation>ruso</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1004"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1033"/>
         <source>Samoan</source>
         <translation>Samoano</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1009"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1038"/>
         <source>Shona</source>
         <translation>Shona</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1010"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1039"/>
         <source>Sindhi</source>
         <translation>Sindhi</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1011"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1040"/>
         <source>Sinhala</source>
         <translation>Cingalés</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1012"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1041"/>
         <source>Slovak</source>
         <translation>eslovaco</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1013"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1042"/>
         <source>Slovenian</source>
         <translation>esloveno</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1014"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1043"/>
         <source>Somali</source>
         <translation>somalí</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1015"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1044"/>
         <source>Spanish</source>
         <translation>Español</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1016"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1045"/>
         <source>Sundanese</source>
         <translation>Sundanés</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1017"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1046"/>
         <source>Swahili</source>
         <translation>swahili</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1018"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1047"/>
         <source>Swedish</source>
         <translation>sueco</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1020"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1049"/>
         <source>Tahitian</source>
         <translation>Tahitiano</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1021"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1050"/>
         <source>Tajik</source>
         <translation>Tayiko</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1022"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1051"/>
         <source>Tamil</source>
         <translation>Tamil</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1023"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1052"/>
         <source>Tatar</source>
         <translation>Tártaro</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1024"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1053"/>
         <source>Telugu</source>
         <translation>Telugu</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1025"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1054"/>
         <source>Thai</source>
         <translation>tailandés</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1026"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1055"/>
         <source>Tongan</source>
         <translation>Tongano</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1027"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1056"/>
         <source>Turkish</source>
         <translation>turco</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1028"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1057"/>
         <source>Turkmen</source>
         <translation>Turcomano</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1030"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1059"/>
         <source>Uighur</source>
         <translation>Uigur</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1031"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1060"/>
         <source>Ukrainian</source>
         <translation>ucranio</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1032"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1061"/>
         <source>Urdu</source>
         <translation>Urdu</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1033"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1062"/>
         <source>Uzbek</source>
         <translation>Uzbeko</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1034"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1063"/>
         <source>Vietnamese</source>
         <translation>vietnamita</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1035"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1064"/>
         <source>Welsh</source>
         <translation>galés</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1036"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1065"/>
         <source>Xhosa</source>
         <translation>Xhosa</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1037"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1066"/>
         <source>Yiddish</source>
         <translation>yídish</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1038"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1067"/>
         <source>Yoruba</source>
         <translation>Yoruba</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1040"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1069"/>
         <source>Zulu</source>
         <translation>zulú</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1043"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1072"/>
         <source>Haitian Creole</source>
         <translation>Criollo haitiano</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1045"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1074"/>
         <source>Hill Mari</source>
         <translation>Hill Mari</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1047"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1076"/>
         <source>Hmong</source>
         <translation>Hmong</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1049"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1078"/>
         <source>Klingon</source>
         <translation>Klingon</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1051"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1080"/>
         <source>Klingon (PlqaD)</source>
         <translation>Klingon (PlqaD)</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1053"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1082"/>
         <source>Kyrgyz</source>
         <translation>Kirguís</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1055"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1084"/>
         <source>Levantine Arabic</source>
         <translation>Árabe levantino</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1057"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1086"/>
         <source>Mari</source>
         <translation>Mari</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1059"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1088"/>
         <source>Myanmar</source>
         <translation>Myanmar</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1063"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1092"/>
         <source>Queretaro Otomi</source>
         <translation>Querétaro otomí</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1065"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1094"/>
         <source>Scots Gaelic</source>
         <translation>Gaélico escocés</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1067"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1096"/>
         <source>Serbian (Cyrillic)</source>
         <translation>Serbio (cirílico)</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1069"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1098"/>
         <source>Serbian (Latin)</source>
         <translation>Serbio (latino)</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1071"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1100"/>
         <source>Sesotho</source>
         <translation>Sesotho</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1073"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1102"/>
         <source>Tagalog</source>
         <translation>Tagalo</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1075"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1104"/>
         <source>Udmurt</source>
         <translation>Udmurt</translation>
     </message>
     <message>
-        <location filename="../src/MyLanguageModel.cpp" line="1077"/>
+        <location filename="../src/MyLanguageModel.cpp" line="1106"/>
         <source>Yucatec Maya</source>
         <translation>Maya yucateco</translation>
     </message>
@@ -1144,12 +1144,12 @@
         <translation>Fallo de cifrado: MyOrgSettings :: onRunOnStartup ()</translation>
     </message>
     <message>
-        <location filename="../src/MyOrgSettings.cpp" line="175"/>
+        <location filename="../src/MyOrgSettings.cpp" line="187"/>
         <source>getLastApplicationPath not found</source>
         <translation>getLastApplicationPath no encontrado</translation>
     </message>
     <message>
-        <location filename="../src/MyOrgSettings.cpp" line="845"/>
+        <location filename="../src/MyOrgSettings.cpp" line="893"/>
         <source>Error: cannot create file</source>
         <translation>Error: no se puede crear el archivo</translation>
     </message>
@@ -1244,67 +1244,67 @@
         <translation>Fallo criptográfico</translation>
     </message>
     <message>
-        <location filename="../src/MyOrgSettings.cpp" line="75"/>
+        <location filename="../src/MyOrgSettings.cpp" line="87"/>
         <source>Failed to make File in getSettings</source>
         <translation>No se pudo crear el archivo en getSettings</translation>
     </message>
     <message>
-        <location filename="../src/MyOrgSettings.cpp" line="451"/>
+        <location filename="../src/MyOrgSettings.cpp" line="463"/>
         <source>Error opening file for reading</source>
         <translation>Error al abrir el archivo para leerlo</translation>
     </message>
     <message>
-        <location filename="../src/MyOrgSettings.cpp" line="451"/>
+        <location filename="../src/MyOrgSettings.cpp" line="463"/>
         <source>Could not open file for reading</source>
         <translation>No se pudo abrir el archivo para leerlo</translation>
     </message>
     <message>
-        <location filename="../src/MyOrgSettings.cpp" line="472"/>
+        <location filename="../src/MyOrgSettings.cpp" line="484"/>
         <source>Error opening file for writing</source>
         <translation>Error al abrir el archivo para escribir</translation>
     </message>
     <message>
-        <location filename="../src/MyOrgSettings.cpp" line="472"/>
+        <location filename="../src/MyOrgSettings.cpp" line="484"/>
         <source>Could not open file for writing</source>
         <translation>No se pudo abrir el archivo para escribir</translation>
     </message>
     <message>
-        <location filename="../src/MyOrgSettings.cpp" line="747"/>
+        <location filename="../src/MyOrgSettings.cpp" line="795"/>
         <source>File not found</source>
         <translation>Archivo no encontrado</translation>
     </message>
     <message>
-        <location filename="../src/MyOrgSettings.cpp" line="758"/>
+        <location filename="../src/MyOrgSettings.cpp" line="806"/>
         <source>Folder not found</source>
         <translation>Carpeta no encontrada</translation>
     </message>
     <message>
-        <location filename="../src/MyOrgSettings.cpp" line="824"/>
+        <location filename="../src/MyOrgSettings.cpp" line="872"/>
         <source>This file was created to test if this folder is writeable by</source>
         <translation>Este archivo fue creado para probar si esta carpeta se puede escribir por</translation>
     </message>
     <message>
-        <location filename="../src/MyOrgSettings.cpp" line="845"/>
+        <location filename="../src/MyOrgSettings.cpp" line="893"/>
         <source>File System Error</source>
         <translation>Error del sistema de archivos</translation>
     </message>
     <message>
-        <location filename="../src/MyOrgSettings.cpp" line="961"/>
+        <location filename="../src/MyOrgSettings.cpp" line="1009"/>
         <source>Yes was clicked</source>
         <translation>Sí se hizo clic</translation>
     </message>
     <message>
-        <location filename="../src/MyOrgSettings.cpp" line="966"/>
+        <location filename="../src/MyOrgSettings.cpp" line="1014"/>
         <source>Yes was not clicked</source>
         <translation>Sí no se hizo clic</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="528"/>
+        <location filename="../src/MainWindow.cpp" line="526"/>
         <source>Could not connect to SQL Database</source>
         <translation>No se pudo conectar a la base de datos SQL</translation>
     </message>
     <message>
-        <location filename="../src/MainWindow.cpp" line="559"/>
+        <location filename="../src/MainWindow.cpp" line="557"/>
         <source>Database Move Failed</source>
         <translation>Error al mover la base de datos</translation>
     </message>

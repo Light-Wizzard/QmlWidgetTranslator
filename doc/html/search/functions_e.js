@@ -14,7 +14,8 @@ var searchData=
   ['retranslate_11',['retranslate',['../classMainWindow.html#ae8662ae2ae5fc1d7921a9b18ec38ae9d',1,'MainWindow']]],
   ['retranslateui_12',['retranslateUi',['../classUi__MainWindow.html#a097dd160c3534a204904cb374412c618',1,'Ui_MainWindow']]],
   ['rolenames_13',['roleNames',['../classMyLanguageModel.html#a2cb4af6cae41859c2185fa1eabc15eb0',1,'MyLanguageModel']]],
-  ['rowcount_14',['rowCount',['../classMyLanguageModel.html#a7752a81c39b79c871f1c9c6dbaa60b88',1,'MyLanguageModel']]],
-  ['runprocces_15',['runProcces',['../classMyDatatables.html#a973d35f2b70e739b8ded02b67bfd887a',1,'MyDatatables']]],
-  ['runquery_16',['runQuery',['../classMyDatatables.html#a7a2f8d39a918a6d636336d1d3704bf14',1,'MyDatatables']]]
+  ['rootnode_14',['rootNode',['../classQGumboDocument.html#a77944ccdac3c1db5f3ad5eadf84e4400',1,'QGumboDocument']]],
+  ['rowcount_15',['rowCount',['../classMyLanguageModel.html#a7752a81c39b79c871f1c9c6dbaa60b88',1,'MyLanguageModel']]],
+  ['runprocces_16',['runProcces',['../classMyDatatables.html#a973d35f2b70e739b8ded02b67bfd887a',1,'MyDatatables']]],
+  ['runquery_17',['runQuery',['../classMyDatatables.html#a7a2f8d39a918a6d636336d1d3704bf14',1,'MyDatatables']]]
 ];

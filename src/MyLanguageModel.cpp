@@ -208,10 +208,10 @@ void MyLanguageModel::setLanguages()
  * @brief set Languages.
  * setLanguage
  ***********************************************/
-void MyLanguageModel::setLanguage(const QString &thisLanguageName)
+bool MyLanguageModel::setLanguage(const QString &thisLanguageName)
 {
     mySetting->setMessage("set Language", QString("setLanguage(%1)").arg(thisLanguageName), MyOrgSettings::MyMessageTypes::Debug);
-    if (thisLanguageName.isEmpty()) { return; }
+    if (thisLanguageName.isEmpty()) { return false; }
     // Get Language File
     QString theQmLanguageFile = getLanguageFile(languageNameToCode(thisLanguageName), getTranslationSource(), getTransFilePrefix());
     // Load Language
@@ -229,12 +229,15 @@ void MyLanguageModel::setLanguage(const QString &thisLanguageName)
         #endif
         setLanguageName(thisLanguageName);
         setLanguageCode(languageNameToCode(thisLanguageName));
+        writeLanguage();
         emit languageChanged();
     }
     else
     {
         mySetting->setMessage("set Language", QString("%1: %2").arg(tr("loadLanguage failed"), theQmLanguageFile), MyOrgSettings::MyMessageTypes::Critical);
+        return false;
     }
+    return true;
 }
 /************************************************
  * @brief get Language From File.
@@ -277,7 +280,7 @@ QString MyLanguageModel::getLocalizedCodeFromFile(const QString &thisPrefix, con
     return theFileName;
 }
 /************************************************
- * @brief Get Qm Files.
+ * @brief Get QM Files.
  * getQmFiles
  ***********************************************/
 QStringList MyLanguageModel::getQmFiles(const QString &thisFolder)
@@ -295,6 +298,32 @@ QStringList MyLanguageModel::getQmFiles(const QString &thisFolder)
         myCurrentQmFiles.insert(theLanguage, fileName);
     }
     return fileNames;
+}
+/************************************************
+ * @brief Get TS Files.
+ * getTsFiles
+ ***********************************************/
+QStringList MyLanguageModel::getTsFiles(const QString &thisFolder)
+{
+    mySetting->setMessage("getTsFiles", QString("getTsFiles(%1)").arg(thisFolder), MyOrgSettings::MyMessageTypes::Debug);
+    QDir dir(thisFolder);
+    QStringList fileNames = dir.entryList(QStringList("*.ts"), QDir::Files, QDir::Name);
+    for (QString &fileName : fileNames)
+    { fileName = dir.filePath(fileName); }
+    return fileNames;
+}
+/************************************************
+ * @brief get Lang Code.
+ * getLangCode
+ ***********************************************/
+QString MyLanguageModel::getLangCode(const QString &thisString)
+{
+    mySetting->setMessage("getLangCode", QString("getLangCode(%1)").arg(thisString), MyOrgSettings::MyMessageTypes::Debug);
+    QString theLangCode = thisString;
+    if (theLangCode.indexOf('_') < 0) { return ""; }
+    if (theLangCode.indexOf('.') > 0)
+    { theLangCode = theLangCode.mid(0, theLangCode.indexOf('.')); }
+    return theLangCode.mid(theLangCode.indexOf('_') + 1);
 }
 /************************************************
  * @brief get Translation Source.
