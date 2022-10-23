@@ -38,6 +38,8 @@
 #include <QCryptographicHash>
 #include <QDataStream>
 #include <QRandomGenerator>
+#include <QTextStream>
+#include <QFile>
 // STD
 #include <iostream>
 #include <assert.h>
