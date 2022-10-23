@@ -183,12 +183,14 @@ else()
     endif()
 endif()
 # Set Target Properties to include MACOS
-set_target_properties(${MY_TARGET} PROPERTIES
-    MACOSX_BUNDLE_GUI_IDENTIFIER ${MY_URL}
-    MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
-    MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
-    MACOSX_BUNDLE_INFO_PLIST ${CMAKE_SOURCE_DIR}/macos/info.plist
-)
+if(APPLE)
+    set_target_properties(${MY_TARGET} PROPERTIES
+        MACOSX_BUNDLE_GUI_IDENTIFIER ${MY_URL}
+        MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
+        MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
+        MACOSX_BUNDLE_INFO_PLIST ${CMAKE_SOURCE_DIR}/macos/info.plist
+    )
+endif()
 # genearats ts and qm file searching recursively THIS_RC_DIR
 function(generate_translations THIS_CUSTOM_TARGET THIS_TS_DIR THIS_TS_FILES THIS_RC_DIR)
     # lupdate
@@ -214,21 +216,23 @@ endfunction()
 set(MY_TS_DIR ${CMAKE_CURRENT_SOURCE_DIR})
 set(MY_SOURCE_LOOKUP_DIR ${CMAKE_CURRENT_SOURCE_DIR})
 # Generate Tralations
-generate_translations(${MY_TARGET} "${MY_TS_DIR}" "${MY_TS_FILES}" "${MY_SOURCE_LOOKUP_DIR}")
+#generate_translations(${MY_TARGET} "${MY_TS_DIR}" "${MY_TS_FILES}" "${MY_SOURCE_LOOKUP_DIR}")
 # Install QM files if not APPLE
-if(UNIX AND NOT APPLE)
+if(UNIX AND NOT APPLE AND NOT WIN32)
     install(FILES ${MY_QM_FILES} DESTINATION ${CMAKE_SOURCE_DIR}/translations)
 endif()
 # Qt 6 stuff
 if(QT_VERSION_MAJOR EQUAL 6)
-    qt_import_qml_plugins(${MY_TARGET})
+    # qt_import_qml_plugins(${MY_TARGET})
     qt_finalize_executable(${MY_TARGET})
 endif()
 # Install Target Destinations
-install(TARGETS ${MY_TARGET}
-  RUNTIME DESTINATION /usr/bin
-  BUNDLE DESTINATION  /usr/bin
-  LIBRARY DESTINATION /usr/lib
-  ARCHIVE DESTINATION /usr/lib
-)
+if(UNIX AND NOT APPLE AND NOT WIN32)
+    install(TARGETS ${MY_TARGET}
+        RUNTIME DESTINATION /usr/bin
+        BUNDLE DESTINATION  /usr/bin
+        LIBRARY DESTINATION /usr/lib
+        ARCHIVE DESTINATION /usr/lib
+    )
+endif()
 ###### End of File ######
