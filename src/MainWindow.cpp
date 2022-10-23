@@ -1160,7 +1160,7 @@ void MainWindow::setProjects()
     QString theRecordID = ui->labelProjectsRecordId->text();
     if (theRecordID.isEmpty())
     {
-        theRecordID = 1;
+        theRecordID = "1";
     }
     QString theProjectsName = ui->lineEditProjectsName->text();
     if (theProjectsName.isEmpty())
@@ -1540,5 +1540,3 @@ void MainWindow::onCursorPositionChanged()
 //    }
 } // end onCursorPositionChanged
 /******************************* End of File *********************************/
-
-
